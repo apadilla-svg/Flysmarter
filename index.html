@@ -1,14 +1,14 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FlySmarter Prototype</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><div class="brand">✈ FlySmarter <span>prototype</span></div><div class="tag">Compare airports • dates • true trip cost</div></header>
+<header><div class="brand">✈ FlySmarter <span>prototype</span></div><div class="tag">Compare airports • dates • fares</div></header>
 <main>
-<section class="hero"><div><p class="eyebrow">SMARTER FLIGHT SEARCH</p><h1>Your trip might be cheaper from another airport.</h1><p>Tell us where you live, where you're going and when you can travel. We'll compare nearby airports, flexible dates and driving costs.</p></div></section>
-<section class="panel search"><div class="grid">
+<section class="hero"><div><p class="eyebrow">SMARTER FLIGHT SEARCH</p><h1>Your trip might be cheaper from another airport.</h1><p>Tell us where you live, where you're going and when you can travel. We'll compare nearby airports and flexible dates to find better flight prices.</p></div></section>
+<section class="panel search"><div class="trip-type"><button class="type active" data-type="Round trip">Round Trip</button><button class="type" data-type="One way">One Way</button></div><div class="grid">
 <label>Starting from<input id="home" value="Imperial, CA"></label><label>Going to<input id="dest" value="New York (NYC)"></label>
 <label>Travel window<input id="dates" value="Oct 8 – Oct 20"></label><label>Travelers<select id="travelers"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
-<label>Trip length<select id="length"><option>3–4 nights</option><option selected>4–6 nights</option><option>6–8 nights</option></select></label><label>Drive tolerance<select id="drive"><option>Up to 2 hours</option><option selected>Up to 3 hours</option><option>Up to 4 hours</option><option>Show all</option></select></label>
-</div><h3>Nearby departure airports</h3><div id="airports" class="airport-list"></div><button id="searchBtn">Find my best flight options</button><p class="demo">Prototype data — fares are simulated and are not live prices.</p></section>
-<section id="results" class="results hidden"><div class="recommend panel"><p class="eyebrow">BEST OVERALL VALUE</p><h2 id="recTitle"></h2><p id="recText"></p></div><div id="insights" class="insights"></div>
-<div class="panel"><div class="section-title"><div><p class="eyebrow">AIRPORT COMPARISON</p><h2>Best options for your trip</h2></div><span id="party"></span></div><div id="cards" class="cards"></div></div>
+<label>Trip length<select id="length"><option>3–4 nights</option><option selected>4–6 nights</option><option>6–8 nights</option></select></label><label>Drive tolerance<select id="drive"><option>Up to 2 hours</option><option>Up to 3 hours</option><option>Up to 4 hours</option><option selected>Show all</option></select></label>
+</div><h3>Nearby departure airports</h3><div id="airports" class="airport-list"></div><button id="searchBtn">Compare flight prices</button><p class="demo">Prototype data — fares are simulated and are not live prices.</p></section>
+<section id="results" class="results hidden"><div class="recommend panel"><p class="eyebrow">FLYSMARTER ANALYSIS</p><h2 id="recTitle"></h2><p id="recText"></p></div><div id="insights" class="insights"></div>
+<div class="panel"><div class="section-title"><div><p class="eyebrow">FLIGHT PRICE COMPARISON</p><h2>Best fares from nearby airports</h2></div><span id="party"></span></div><div id="cards" class="cards"></div></div>
 <div class="panel savings"><p class="eyebrow">FLEXIBLE DATE OPPORTUNITY</p><h2>Small date changes can make a big difference.</h2><p id="savingText"></p></div>
-<div class="panel assumptions"><h3>How “estimated trip cost” works</h3><p>For this prototype: airfare for your whole party + estimated round-trip driving fuel + estimated airport parking. These assumptions are intentionally simple and can later be replaced with live distance, parking and fare data.</p></div></section>
-</main><footer>FlySmarter v0.1 • UX prototype • No live booking or fare data</footer><script src="app.js"></script></body></html>
+<div class="panel assumptions"><h3>About driving costs</h3><p>FlySmarter keeps airfare as the main comparison. Estimated fuel and parking are shown as secondary context and are considered in the analysis when deciding whether driving farther for a cheaper flight is actually worthwhile.</p></div></section>
+</main><footer>FlySmarter v0.2 • UX prototype • No live booking or fare data</footer><script src="app.js"></script></body></html>

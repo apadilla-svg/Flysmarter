@@ -1,14 +1,13 @@
-# FlySmarter v0.1 Prototype
+# FlySmarter v0.2 Prototype
 
-A responsive UX prototype for comparing multiple departure airports, flexible dates, and estimated total trip cost.
+Responsive prototype focused on comparing flight prices across nearby departure airports and flexible dates.
 
-## Run locally
-Open `index.html` in any modern browser. No installation, API key, or build step is required.
+## v0.2 changes
+- Added Round Trip / One Way selection
+- Removed Imperial (IPL) from comparison airports
+- Made airfare the primary result
+- De-emphasized estimated gas and parking costs
+- Updated FlySmarter analysis to explain airfare vs. driving tradeoffs
+- Results now sort by flight price
 
-## Prototype limitations
-- All fares are simulated demo data.
-- Drive times, fuel, and parking estimates are simplified.
-- No live flight API, booking, accounts, hotels, rental cars, or price alerts yet.
-
-## Next development stage
-Convert the validated UX into a Next.js/Vercel app and connect staged flight-data sources: indicative/cached discovery first, live fare verification second.
+All fares are simulated prototype data. No live booking or fare API is connected yet.
