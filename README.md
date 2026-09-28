@@ -1,13 +1,15 @@
-# FlySmarter v0.2 Prototype
+# FlySmarter v0.3 Prototype
 
-Responsive prototype focused on comparing flight prices across nearby departure airports and flexible dates.
+v0.3 redesigns the search flow.
 
-## v0.2 changes
-- Added Round Trip / One Way selection
-- Removed Imperial (IPL) from comparison airports
-- Made airfare the primary result
-- De-emphasized estimated gas and parking costs
-- Updated FlySmarter analysis to explain airfare vs. driving tradeoffs
-- Results now sort by flight price
+- Question-style location field
+- Destination city/airport suggestions
+- Calendar departure and return dates
+- Round trip / one way behavior
+- Removed drive tolerance
+- Flexible dates Yes/No
+- Travel window and trip length only appear when flexible dates are enabled
+- More specific date-savings language
+- Airfare remains primary; gas and parking are secondary context
 
-All fares are simulated prototype data. No live booking or fare API is connected yet.
+All fares and suggestions are simulated prototype data.
