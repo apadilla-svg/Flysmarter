@@ -4,16 +4,16 @@
 <section class="panel search"><div class="trip-type"><button class="type active" data-type="Round trip">Round Trip</button><button class="type" data-type="One way">One Way</button></div>
 <div class="grid">
 <label>What's your location?<small class="help">We'll use this to find airports near you.</small><input id="home" value="Imperial, CA"></label>
-<label class="destination-wrap">Destination<small class="help">City or airport</small><input id="dest" value="New York" autocomplete="off"><div id="destSuggestions" class="suggestions hidden"></div></label>
+<label class="destination-wrap">Destination<small class="help">City, airport, or airport code</small><input id="dest" value="New York" autocomplete="off"><div id="destSuggestions" class="suggestions hidden"></div></label>
 <label>Travelers<select id="travelers"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
 <label>Departure date<input id="departDate" type="date" value="2026-10-10"></label>
 <label id="returnWrap">Return date<input id="returnDate" type="date" value="2026-10-15"></label>
 <div class="flex-field"><span>Are your travel dates flexible?</span><div class="yesno"><button class="flex-choice" data-flex="yes">Yes</button><button class="flex-choice active" data-flex="no">No</button></div></div>
 </div>
-<div id="flexOptions" class="flex-options hidden"><h3>Tell us how flexible you are</h3><div class="grid two"><label>Travel window<input id="windowStart" type="date" value="2026-10-08"><span class="to">through</span><input id="windowEnd" type="date" value="2026-10-20"></label><label>Trip length<select id="length"><option>3–4 nights</option><option selected>4–6 nights</option><option>6–8 nights</option><option>Any length</option></select></label></div></div>
+<div id="flexOptions" class="flex-options hidden"><h3>Tell us how flexible you are</h3><div class="flex-grid"><label>Earliest departure<input id="windowStart" type="date" value="2026-10-08"></label><label>Latest return<input id="windowEnd" type="date" value="2026-10-20"></label><label>Trip length<select id="length"><option>3–4 nights</option><option selected>4–6 nights</option><option>6–8 nights</option><option>Any length</option></select></label></div></div>
 <h3>Nearby departure airports</h3><p class="subcopy">Choose the airports you'd like FlySmarter to compare.</p><div id="airports" class="airport-list"></div><button id="searchBtn">Compare flight prices</button><p class="demo">Prototype data — fares and airport suggestions are simulated and are not live prices.</p></section>
 <section id="results" class="results hidden"><div class="recommend panel"><p class="eyebrow">FLYSMARTER ANALYSIS</p><h2 id="recTitle"></h2><p id="recText"></p></div><div id="insights" class="insights"></div>
 <div class="panel"><div class="section-title"><div><p class="eyebrow">FLIGHT PRICE COMPARISON</p><h2>Best fares from nearby airports</h2></div><span id="party"></span></div><div id="cards" class="cards"></div></div>
 <div id="savingsPanel" class="panel savings hidden"><p class="eyebrow">SAVE BY CHANGING YOUR DATES</p><h2>A small date change could lower your airfare.</h2><p id="savingText"></p></div>
 <div class="panel assumptions"><h3>About driving costs</h3><p>Airfare stays front and center. Estimated gas and parking are secondary context and are used in the FlySmarter analysis to help explain whether a farther airport is worth the drive.</p></div></section>
-</main><footer>FlySmarter v0.3 • UX prototype • No live booking or fare data</footer><script src="app.js"></script></body></html>
+</main><footer>FlySmarter v0.4 • UX prototype • No live booking or fare data</footer><script src="app.js"></script></body></html>
