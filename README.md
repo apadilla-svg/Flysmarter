@@ -1,12 +1,18 @@
-# FlySmarter v0.4 Prototype
+# FlySmarter v0.5 Prototype
 
-v0.4 expands the destination search experience and improves flexible-date wording.
+v0.5 cleans up the date-search logic and prepares the prototype for live data.
 
-- Broader simulated destination autocomplete covering major U.S., Mexico, Canada, Europe, and Japan destinations
-- Search by city, airport name, or airport code
-- Multi-airport metro suggestions for cities such as New York, Chicago, Washington, Houston, San Francisco, London, and Tokyo
-- Flexible-date fields renamed to Earliest departure and Latest return
-- Flexible date controls displayed side-by-side on desktop
-- All v0.3 airfare-first comparison behavior retained
+## v0.5 changes
+- Fixed the exact-date vs. flexible-date flow.
+- If dates are NOT flexible, users see Departure Date + Return Date.
+- If dates ARE flexible, those exact-date fields disappear and are replaced by Earliest Departure + Latest Return + Trip Length.
+- One-way searches hide Return Date; flexible one-way searches use Earliest Departure + Latest Departure.
+- Kept the broader v0.4 destination autocomplete intact.
+- Kept airfare as the primary comparison and gas/parking as secondary context.
 
-Destination data and fares remain simulated. A later live-data version should replace the hard-coded destination list with a real airport/location service.
+## Live-data preparation
+The current destination list is still bundled with the prototype so the site remains self-contained. The next data layer can replace it with a generated airport index sourced from OurAirports. OurAirports publishes public-domain CSV data with airport name, municipality, IATA code, scheduled-service status, latitude, and longitude.
+
+Live airfare is not connected yet. API credentials should be stored server-side (for example in Vercel environment variables), never in browser-side app.js.
+
+All displayed fares remain simulated prototype data.

@@ -6,7 +6,7 @@
 <label>What's your location?<small class="help">We'll use this to find airports near you.</small><input id="home" value="Imperial, CA"></label>
 <label class="destination-wrap">Destination<small class="help">City, airport, or airport code</small><input id="dest" value="New York" autocomplete="off"><div id="destSuggestions" class="suggestions hidden"></div></label>
 <label>Travelers<select id="travelers"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
-<label>Departure date<input id="departDate" type="date" value="2026-10-10"></label>
+<label id="departWrap">Departure date<input id="departDate" type="date" value="2026-10-10"></label>
 <label id="returnWrap">Return date<input id="returnDate" type="date" value="2026-10-15"></label>
 <div class="flex-field"><span>Are your travel dates flexible?</span><div class="yesno"><button class="flex-choice" data-flex="yes">Yes</button><button class="flex-choice active" data-flex="no">No</button></div></div>
 </div>
@@ -16,4 +16,4 @@
 <div class="panel"><div class="section-title"><div><p class="eyebrow">FLIGHT PRICE COMPARISON</p><h2>Best fares from nearby airports</h2></div><span id="party"></span></div><div id="cards" class="cards"></div></div>
 <div id="savingsPanel" class="panel savings hidden"><p class="eyebrow">SAVE BY CHANGING YOUR DATES</p><h2>A small date change could lower your airfare.</h2><p id="savingText"></p></div>
 <div class="panel assumptions"><h3>About driving costs</h3><p>Airfare stays front and center. Estimated gas and parking are secondary context and are used in the FlySmarter analysis to help explain whether a farther airport is worth the drive.</p></div></section>
-</main><footer>FlySmarter v0.4 • UX prototype • No live booking or fare data</footer><script src="app.js"></script></body></html>
+</main><footer>FlySmarter v0.5 • UX prototype • No live booking or fare data</footer><script src="app.js"></script></body></html>
